@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="kMod/kMod.vcxproj" Id="ea008aaf-3520-4674-95f4-3bf3e3979a03" />
+</Solution>

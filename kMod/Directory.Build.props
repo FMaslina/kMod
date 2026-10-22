@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <KenshiLibSdkRoot Condition="'$(KenshiLibSdkRoot)' == ''">C:\Users\Owner\Desktop\KenshiModding\KenshiLib-RE_Kenshi_mods</KenshiLibSdkRoot>
+    <KenshiLibReleaseRoot>$(MSBuildThisFileDirectory)..\third_party\KenshiModding\KenshiLib_v0.5.1</KenshiLibReleaseRoot>
+    <KenshiLibInclude>$(KenshiLibSdkRoot)\Include</KenshiLibInclude>
+    <KenshiLibLibraries>$(KenshiLibSdkRoot)\Libraries</KenshiLibLibraries>
+    <KenshiLibLib>$(KenshiLibReleaseRoot)</KenshiLibLib>
+    <KenshiBoostRoot Condition="'$(KenshiBoostRoot)' == ''">C:\Users\Owner\Desktop\KenshiModding\KenshiLib_Examples_deps-master\boost_1_60_0</KenshiBoostRoot>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(KenshiLibInclude);$(KenshiBoostRoot);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(KenshiLibLib);$(KenshiLibLibraries)\ogre;$(KenshiLibLibraries)\mygui;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>KenshiLib.lib;OgreMain_x64.lib;MyGUIEngine_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

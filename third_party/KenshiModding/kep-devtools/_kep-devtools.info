@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ModData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>3740289989</id>
+  <mod>kep-devtools</mod>
+  <title>Re_Dev (RE_Kenshi)</title>
+  <tags>
+    <string>RE_Kenshi</string>
+  </tags>
+  <visibility>0</visibility>
+  <lastUpdate>2026-08-13T00:56:39.9819576+09:00</lastUpdate>
+</ModData>
